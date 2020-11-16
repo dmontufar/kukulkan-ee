@@ -1,13 +1,10 @@
 pipeline {
-      
-        agent any
-         stages {
-           stages('build'){
-              steps{
-               bat 'mvn clean verify'
+    agent any
+    stages {
+        stages('build'){
+            steps{
+             bat 'mvn clean verify'
             }
-   
-}
-
-}
+        }
+    }
 }
